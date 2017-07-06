@@ -1,7 +1,7 @@
 # linked-list-example
 A quick-and-dirty example of a doubly-linked list in Processing.
 
-##Look how neat. Very Wow.
+## Look how neat. Very Wow.
 
 ![wow, circles, good going genius](images/running.PNG)
 

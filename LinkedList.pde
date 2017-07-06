@@ -1,9 +1,11 @@
 public class LinkedList{
   private Node first;
   private Node last;
+  private int count;
   public LinkedList(Creature firstValue){
      this.first = new Node(null, firstValue);
      this.last = this.first;
+     this.count = 1;
   }
   
   public void Add(Creature newValue){
@@ -27,6 +29,7 @@ public class LinkedList{
     
     // Finally, we make the newNode have the current node as its previous.
     newNode.previous = current;
+    this.count++;
   }
   public void Iterate(){
     Node current = this.first;
@@ -34,6 +37,10 @@ public class LinkedList{
       current.value.show();
       current = current.Next();
     }
+  }
+  
+  public int getCount(){
+    return this.count;
   }
 }
 

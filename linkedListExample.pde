@@ -12,4 +12,6 @@ void draw(){
     list.Add(new Creature((int)random(50)));
   }
   list.Iterate();
+  println(frameRate, "\tFPS");
+  println(list.getCount(), "\tItems in list");
 }

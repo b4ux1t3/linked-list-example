@@ -1,17 +1,21 @@
 LinkedList list = new LinkedList(new Creature(50));
-int counter = 0;
+
 void setup(){
   size(400,400);
   
 }
 
 void draw(){
-  background(0);
-  ellipse(mouseX, mouseY, 30, 30);
-  if (counter % 13 == 0){
+  if (list.getCount() < 1000){
+    list.Add(new Creature((int)random(50)));
+    background(0); 
+    list.Iterate();
+    println(frameRate, "\tFPS");
+    println(list.getCount(), "\tItems in list");
+  } else if (list.getCount() == 1000){
+    println("You score is ", frameRate * list.getCount());
     list.Add(new Creature((int)random(50)));
   }
-  list.Iterate();
-  println(frameRate, "\tFPS");
-  println(list.getCount(), "\tItems in list");
+  
+  ellipse(mouseX, mouseY, 30, 30);
 }

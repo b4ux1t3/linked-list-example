@@ -20,7 +20,7 @@ Well, after you create 1000 `Creature`s (the circles), your average `frameRate` 
 
 If you need more info on those steps, keep reading. I will expand on each of the steps. These instructions are for installing this on a Linux-based operating system, like a Raspberry Pi running Raspbian, or any computer running Ubuntu. If you're using a different version of Linux (say, Fedora or CentOS), use whatever download utility (like `curl`) that comes with your distribution for part 1. Apart from that, everything should be the same on nearly any modern Linux distribution.
 
-1. Download and Install Processing:
+1. **Download and Install Processing:**
 
 First, you need to get the binaries from the Processing website. You can do this manually, by going to the webpage and downloading them. Or you can just run the command:
 
@@ -43,7 +43,7 @@ Once it's extracted, `cd` into the newly created `processing-3.3.5`directory. Th
 
 This does not require root, and only installs it for your current user. Congratz! You have Processing installed!
 
-2. Clone This Repository:
+2. **Clone This Repository:**
 
 This is relatively straightforward. You just need to have `git` installed (I'll leave you to figure out how to do that on your own. Hint: Your operating system will probably tell you how). Then you just enter the command above in your terminal wherever you would like to put theproject folder.
 
@@ -51,7 +51,7 @@ This is relatively straightforward. You just need to have `git` installed (I'll 
 
 Boom! Done. You now have a copy of this code.
 
-3. Open it up with Processing:
+3. **Open it up with Processing:**
 
 When you ran the `./install.sh` script, it should have placed a shortcut on your desktop. If it didn't, start this guide over again. if it did, click on that icon, shown here. 
 
@@ -61,10 +61,10 @@ Open that up. This will take a while on the Pi. This is _not_ a quick process on
 
 Now all you have to do is click `File`, `Open`, and then open up any of the .pde files from the project folder that you `git clone`ed. This will open them all up in the Processing IDE.
 
-4. Click the Run Icon:
+4. **Click the Run Icon:**
 
 No, seriously, that's all you have to do at this point. It should start to run!
 
-5. Done!
+5. **Done!**
 
 :D
